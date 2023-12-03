@@ -9,4 +9,14 @@ html
                 Hola has click en #[a(href="www.google.com") este link] por fav
         p!= "esto es una bosta"
         
+        each item in arreglo 
+            case item
+                when 1
+                    p El item era uno
+                when 2
+                    p El item era dos
+                default
+                    p!= "Era otro item " + item 
+        
+
         
